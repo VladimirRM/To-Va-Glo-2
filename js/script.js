@@ -9,11 +9,21 @@ btn.addEventListener("click", (e) => {
   createDeleteElements(input.value);
   input.value = "";
 });
-
+// create and delete todo
 function createDeleteElements(value) {
-  console.log(value);
   const li = document.createElement("li");
+  const btn = document.createElement("button");
+
   li.className = "li";
-  li.textContent = value
+  li.textContent = value;
+
+  btn.className = "btn";
+  btn.textContent = "add";
+  li.appendChild(btn)
+// remove todo
+  btn.addEventListener('click',e =>{
+
+    result.removeChild(li)
+  })
   result.appendChild(li);
 }
