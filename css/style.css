@@ -23,3 +23,35 @@ ul{
 #result{
     margin-bottom: 50px;
 }
+.btn{
+background: rgb(155, 20, 20);   
+border: none;
+color:#fff ;
+margin-left: 15px;
+padding: 10px;
+cursor: pointer;
+position: relative;
+ z-index: 10;
+}
+.li{
+    padding: 4 8 px;
+    background: #545357;
+    border: 1 px solid rgb(78, 64, 64);
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.li-active{
+    color: #555;
+    text-decoration: line-through;
+    background: #000;
+
+}
+.li-active .btn{
+    color: #555;
+    text-decoration: line-through;
+    background: #000;
+
+}
