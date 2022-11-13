@@ -4,15 +4,16 @@ const result = document.querySelector("#result");
 const total = document.querySelector("#total");
 
 btn.addEventListener("click", (e) => {
-  console.log(input.value);
-  if(input.value === '') return 
+  if (input.value === "") return;
 
-  input.value = "";
   createDeleteElements(input.value);
+  input.value = "";
 });
 
 function createDeleteElements(value) {
-const li = document.createElement('li')
-
-
+  console.log(value);
+  const li = document.createElement("li");
+  li.className = "li";
+  li.textContent = value
+  result.appendChild(li);
 }

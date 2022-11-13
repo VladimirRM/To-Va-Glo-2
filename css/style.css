@@ -17,8 +17,8 @@ body {
 
 }
 #input {
-  /* width: 150px; */
-  /* margin-left: 50px; */
+  
+  margin-left: none;
 }
 #btn {
   width: 20%;
@@ -47,8 +47,8 @@ ul {
   border: 1 px solid rgb(78, 64, 64);
   margin: 10px 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+max-width: 130px;
+
 }
 
 .li-active {
