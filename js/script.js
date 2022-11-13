@@ -5,6 +5,9 @@ const total = document.querySelector("#total");
 
 btn.addEventListener("click", (e) => {
   console.log(input.value);
-  result.innerHTML += `<li>${input.value}</li>`;
+  //   result.innerHTML += `<li>${input.value}</li>`;
   input.value = "";
+  createDeleteElements();
 });
+
+function createDeleteElements(value) {}
