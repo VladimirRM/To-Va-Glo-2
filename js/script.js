@@ -5,5 +5,6 @@ const total = document.querySelector('#total')
 
 
 btn.addEventListener("click", (e)=>{
-    
-})
+    console.log(input.value);
+    result.innerHTML += input.value
+}) 
